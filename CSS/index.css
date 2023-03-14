@@ -1,0 +1,2650 @@
+/* 
+Name : Gad Reda Gad
+content : portfolio
+Date : 2/2/2022
+*/
+
+/* Start CSS Global */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f9f8fa;
+}
+/* End CSS Global */
+
+/* Start CSS Codes */
+
+/* Start Header */
+/* Start Navbar */
+nav{
+    background-color: #212529;
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    z-index: 999;
+}
+
+nav a,ul{
+    padding-top: 5px;
+}
+
+/* Start Logo */
+.navbar h3 a{
+    font-size: 30px;
+    color: #f9f8fa;
+    font-weight: 700;
+    position: absolute;
+    top:10px;
+    letter-spacing: 2px;
+}
+
+.navbar h3 a:hover{
+    transform: scale(1.1);
+}
+
+.navbar h3{
+    margin: 10px;
+}
+/* End Logo */
+
+.navbar ul{
+    display: flex;
+    position: absolute;
+    top:20px;
+    left:50%;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    margin-left: 20px;
+    font-weight: 600;
+    color:#f9f8fa;
+}
+
+.navbar ul li a:hover{
+    color: goldenrod;
+    transition: all .3s ease;
+}
+
+.navbar ul li a:last-child{
+    margin-right: 40px;
+}
+
+.active{
+    color: goldenrod;
+    transition: all .3s ease;
+}
+/* Start Img Header */
+.background img{
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* End Img Header */
+
+/* End Navbar */
+
+/* Start Effect */
+.effect{
+    width:200px;
+    height:200px;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+    position: absolute;
+    top:30%;
+    left:12%;
+    background-color: goldenrod;
+    opacity: .5;
+}
+
+/* End Effect */
+
+/* Start Article */
+article{
+    position: absolute;
+    top:40vh;
+    left:35vh;
+}
+
+article h4{
+    font-size: 35px;
+}
+
+article h2{
+    font-size: 50px;
+}
+
+article h5{
+    font-size: 45px;  
+}
+
+.lancer{
+    animation-name: lancer;
+    animation-duration: 1.5s;
+    animation-delay: .1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes lancer{
+    from{position: absolute;top:13.5vh;left:130vh;}
+    to{position: absolute;top:13.5vh;left:43vh;}
+}
+
+/* Start BTN */
+.hire{
+    padding: 12px 25px 12px 25px;
+    background-color: goldenrod;
+    border:1px solid goldenrod;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: goldenrod 0px 0px 10px;
+    color: #f9f8fa;
+}
+
+.hire:hover{
+    background-color: rgb(209, 163, 45);
+}
+
+.img-mob{
+    display: none;
+}
+.img-mob-exit{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
+/* End BTN */
+
+/* End Article */
+
+/* Start Img-Head */
+.img-head img{
+    width:720px;
+    height:500px;
+    position: absolute;
+    top:200px;
+    left:100vh;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+    animation-direction: alternate;
+}
+@keyframes img{
+    from{transform: scale(0,0);}
+    to{transform: scale(1.1,1.1);}
+}
+/* End Img-Head */
+
+/* Start Mobile */
+@media screen and (max-width:851px) {
+/* Start Navbar */
+nav{
+    background-color: #000000;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    z-index: 999;
+}
+
+nav a,ul{
+    padding-top: 5px;
+}
+
+/* Start Logo */
+.navbar h3 a{
+    font-size: 35px;
+    color: #f9f8fa;
+    font-weight: 700;
+    position: absolute;
+    top:15px;
+    letter-spacing: 2px;
+}
+
+.navbar h3 a:hover{
+    transform: scale(1.1);
+}
+
+.navbar h3{
+    margin: 10px;
+}
+/* End Logo */
+
+.navbar-mob ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212529;
+    border: 2px solid #222222;
+    width:100%;
+    height: 640px;
+    position: absolute;
+    top:80px;
+    left:0px;
+    padding: 50px;
+    display: none;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    font-size: 30px;
+}
+
+.navbar ul li a:hover{
+    color: goldenrod;
+    transition: all .3s ease;
+}
+
+.navbar ul li a:last-child{
+    margin-right: 40px;
+}
+
+.img-mob{
+    display: flex;
+    float: right;
+}
+
+.img-mob img{
+    width:50px;
+    height:45px;
+    margin-top: -5px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.img-mob-exit{
+    display: none;
+    float: right;
+}
+
+.img-mob-exit img{
+    width:45px;
+    height:45px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.active{
+    color: goldenrod;
+    transition: all .3s ease;
+}
+/* Start Img Header */
+.background-mob img{
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* End Img Header */
+
+/* End Navbar */
+
+/* Start Effect */
+.effect{
+    width:200px;
+    height:200px;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+    position: absolute;
+    top:30%;
+    left:5%;
+    background-color: goldenrod;
+    opacity: .5;
+}
+
+/* End Effect */
+
+/* Start Article */
+article{
+    position: absolute;
+    top:38vh;
+    left:5vh;
+}
+
+article h4{
+    font-size: 35px;
+}
+
+article h2{
+    font-size: 50px;
+}
+
+article h5{
+    font-size: 45px;  
+}
+.lancer{
+    animation: none;
+}
+
+/* Start BTN */
+.hire{
+    padding: 15px 50px 15px 50px;
+    background-color: goldenrod;
+    border:1px solid goldenrod;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: goldenrod 0px 0px 10px;
+    color: #f9f8fa;
+}
+
+.hire:hover{
+    background-color: rgb(209, 163, 45);
+}
+.hr-mob{
+    width:60%;
+}
+
+/* End BTN */
+
+/* End Article */
+
+/* Start Img-Head */
+.img-head img{
+    display: none;
+}
+/* End Img-Head */
+}
+/* End Mobile */
+
+/* End Header */
+
+/* Start About Section */
+/* Start Text */
+.About{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.About h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:100vh;
+}
+.About h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.About h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.About h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+/* End Text */
+
+/* Start contain */
+section .contain{
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: #212529 0px 0px 7px;
+    width:50%;
+    height:auto;
+    background-color: #000000;
+    display:flex;
+    flex-direction: column;
+    margin:130px auto 50px auto;
+}
+section .contain:hover{
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left: transparent;
+    transition: all .3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* End contain */
+
+/* Start photo */
+.contain img{
+    height:300px;
+    width: 300px;
+    border-radius: 10px;
+    margin:20px auto;
+    flex-wrap: wrap;
+}
+
+.contain img:hover{
+    transform: scale(1.1,1.1);
+    transition:all .3s ease-in-out;
+    cursor: pointer;
+}
+/* End photo */
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Start text */
+
+.my-name h1{
+    color: goldenrod;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.my-about p{
+    padding: 10px;
+    color: #f9f8fa;
+    flex-wrap: wrap;
+}
+
+/* Start btn cv */
+section .contain .parent button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+    padding: 8px 40px 8px 40px;
+    margin: 10px;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+section .contain .parent button:hover{
+    background-color: rgb(196, 151, 38);
+    cursor: pointer;
+}
+
+/* End btn cv */
+
+/* End text */
+
+/* Start Mobil About */
+@media screen and (max-width:851px) {
+    .About{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.About h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:18vh;
+}
+.About h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.About h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.About h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+/* End Text */
+
+/* Start contain */
+section .contain{
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: #212529 0px 0px 7px;
+    width:90%;
+    height:auto;
+    background-color: #000000;
+    display:flex;
+    flex-direction: column;
+    margin:110px auto 50px auto;
+}
+section .contain:hover{
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left: transparent;
+    transition: all .3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* End contain */
+
+/* Start photo */
+.contain img{
+    height:300px;
+    width: 300px;
+    border-radius: 10px;
+    margin:20px auto;
+    flex-wrap: wrap;
+}
+
+.contain img:hover{
+    transform: scale(1.1,1.1);
+    transition:all .3s ease-in-out;
+    cursor: pointer;
+}
+/* End photo */
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Start text */
+
+.my-name h1{
+    color: goldenrod;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.my-about p{
+    padding: 10px;
+    color: #f9f8fa;
+    flex-wrap: wrap;
+}
+
+/* Start btn cv */
+section .contain .parent button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+    padding: 8px 40px 8px 40px;
+    margin: 10px;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+section .contain .parent button:hover{
+    background-color: rgb(196, 151, 38);
+    cursor: pointer;
+}
+
+/* End btn cv */
+
+/* End text */
+}
+/* End Mobil About */
+
+/* End About Section */
+
+/* Start Services Section */
+/* Start Text */
+.services{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.services h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:99vh;
+}
+.services h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.services h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.services h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+
+.services-hover{
+    height: 150px;
+    width: 150px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    transition: all .3s ease;
+    border-left: transparent;
+    border-bottom: transparent;
+    border-radius: 2px;
+}
+.services-hover2{
+    height: 150px;
+    width: 150px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    transition: all .3s ease;
+    border-right: transparent;
+    border-top: transparent;
+    border-radius: 2px;
+}
+/* End Text */
+
+.service-parent{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Front{
+    margin: 50px 0px 50px 0px;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Front:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 5px;
+}
+.Front img{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+.Front h1{
+    color: goldenrod;
+    font-weight: 700;
+    color: goldenrod;
+    font-size: 25px;
+    padding: 10px 0px 10px 50px;
+}
+.Front p{
+    color: #f9f8fa;
+    align-self: center;
+}
+
+.Front button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 40px 8px 40px;
+    margin: 20px 5px 0px 150px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Front button:hover{
+    background-color: rgb(206, 157, 34);
+    box-shadow: goldenrod 0px 0px 5px;
+}
+
+.ui-ux{
+    margin: 50px 0px 50px 0px;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+}
+.ui-ux:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 5px;
+}
+.ui-ux img{
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+}
+.ui-ux h1{
+    color: goldenrod;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0px 10px 100px;
+} 
+.ui-ux p{
+    color: #f9f8fa;
+}
+.ui-ux button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 40px 8px 40px;
+    margin: 20px 5px 0px 142px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 18px;
+}
+.ui-ux button:hover{
+    background-color: rgb(206, 157, 34);
+    box-shadow: goldenrod 0px 0px 5px;
+}
+
+/* Youtube */
+.youtube{
+    margin: 50px 0px 50px 0px;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: #212529 0px 3px 5px;
+}
+.youtube:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.youtube img{
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+}
+.youtube h1{
+    color: goldenrod;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0px 10px 130px;
+} 
+.youtube p{
+    color: #f9f8fa;
+}
+.youtube button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 40px 8px 40px;
+    margin: 20px 5px 0px 130px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 18px;
+}
+.youtube button:hover{
+    background-color: rgb(206, 157, 34);
+    box-shadow: goldenrod 0px 0px 5px;
+}
+
+/* Start Mobile Services */
+@media screen and (max-width:851px) {
+.services{
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.services h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:17vh;
+}
+.services h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.services h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.services h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+
+.services-hover{
+    height: 150px;
+    width: 150px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    transition: all .3s ease;
+    border-left: transparent;
+    border-bottom: transparent;
+    border-radius: 2px;
+}
+.services-hover2{
+    height: 150px;
+    width: 150px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    transition: all .3s ease;
+    border-right: transparent;
+    border-top: transparent;
+    border-radius: 2px;
+}
+/* End Text */
+
+.service-parent{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Front{
+    margin: 25px auto;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Front:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 5px;
+}
+.Front img{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+.Front h1{
+    color: goldenrod;
+    font-weight: 700;
+    color: goldenrod;
+    font-size: 20px;
+    padding: 10px 0px 15px 30px;
+    align-self: center;
+}
+.Front p{
+    color: #f9f8fa;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.Front button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left:27%;
+}
+
+.Front button:hover{
+    background-color: rgb(206, 157, 34);
+    box-shadow: goldenrod 0px 0px 5px;
+}
+
+.ui-ux{
+    margin: 25px auto;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+}
+.ui-ux:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 5px;
+}
+.ui-ux img{
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+}
+.ui-ux h1{
+    color: goldenrod;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0px 15px 20%;
+} 
+.ui-ux p{
+    color: #f9f8fa;
+}
+.ui-ux button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left:30%;
+
+}
+.ui-ux button:hover{
+    background-color: rgb(206, 157, 34);
+    box-shadow: goldenrod 0px 0px 5px;
+}
+
+/* Youtube */
+.youtube{
+    margin: 25px auto;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+}
+.youtube:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.youtube img{
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+}
+.youtube h1{
+    color: goldenrod;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0px 15px 30%;
+} 
+.youtube p{
+    color: #f9f8fa;
+}
+.youtube button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left:30%;
+
+}
+.youtube button:hover{
+    background-color: rgb(206, 157, 34);
+    box-shadow: goldenrod 0px 0px 5px;
+}
+}
+/* End Mobile Services */
+
+/* End Services Section */
+
+/* Start Text */
+.Skills{
+    margin-bottom: 140px;
+    margin-top: -30px;
+}
+
+.Skills h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:103vh;
+}
+.Skills h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.Skills h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.Skills h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+/* End Text */
+
+/* Start Skills Section */
+.parent-skill{
+    background-color: #000000;
+    border-radius: 7px;
+    width: 70%;
+    height:auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    box-shadow: #212529 0px 0px 4px;
+} 
+/* HTML */
+.html{
+    height:15px;
+    width:50%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.html::before{
+    content: "HTML";
+    color: #f9f8fa;
+    position: absolute;
+    left:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.html::after{
+    content: "90%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-html{
+    height:15px;
+    width:90%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* CSS */
+.css{
+    margin-top: 30px;
+    height:15px;
+    width:50%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.css::before{
+    content: "CSS";
+    color: #f9f8fa;
+    position: absolute;
+    left:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.css::after{
+    content: "85%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-css{
+    height:15px;
+    width:85%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* JavaScript */
+.javaScript{
+    margin-top: 30px;
+    height:15px;
+    width:50%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.javaScript::before{
+    content: "Java Script";
+    color: #f9f8fa;
+    position: absolute;
+    left:-30%;
+    top:-8px;
+    font-size: 25px;
+}
+.javaScript::after{
+    content: "80%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-javaScript{
+    height:15px;
+    width:80%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* jquery */
+.jquery{
+    margin-top: 30px;
+    height:15px;
+    width:50%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.jquery::before{
+    content: "jquery";
+    color: #f9f8fa;
+    position: absolute;
+    left:-19%;
+    top:-8px;
+    font-size: 25px;
+}
+.jquery::after{
+    content: "85%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-jquery{
+    height:15px;
+    width:85%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* bootstrap */
+.bootstrap{
+    margin-top: 30px;
+    height:15px;
+    width:50%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.bootstrap::before{
+    content: "Bootstrap";
+    color: #f9f8fa;
+    position: absolute;
+    left:-27%;
+    top:-8px;
+    font-size: 25px;
+}
+.bootstrap::after{
+    content: "90%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-bootstrap{
+    height:15px;
+    width:90%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* UI */
+.UI{
+    margin-top: 30px;
+    height:15px;
+    width:50%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.UI::before{
+    content: "UI/UX";
+    color: #f9f8fa;
+    position: absolute;
+    left:-19%;
+    top:-8px;
+    font-size: 25px;
+}
+.UI::after{
+    content: "80%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-18%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-UI{
+    height:15px;
+    width:80%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+
+/* Start Mobile skill */
+@media screen and (max-width:851px) {
+/* Start Text */
+.Skills{
+    margin-bottom: 140px;
+    margin-top: -30px;
+}
+
+.Skills h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:19vh;
+}
+.Skills h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.Skills h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.Skills h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+/* End Text */
+
+/* Start Skills Section */
+.parent-skill{
+    background-color: #000000;
+    border-radius: 7px;
+    width: 100%;
+    height:auto;
+    padding: 50px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #212529 0px 0px 4px;
+} 
+/* HTML */
+.html{
+    height:15px;
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.html::before{
+    content: "HTML";
+    color: #f9f8fa;
+    position: absolute;
+    left:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.html::after{
+    content: "90%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-html{
+    height:15px;
+    width:90%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* CSS */
+.css{
+    margin-top: 30px;
+    height:15px;
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.css::before{
+    content: "CSS";
+    color: #f9f8fa;
+    position: absolute;
+    left:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.css::after{
+    content: "85%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-css{
+    height:15px;
+    width:85%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* JavaScript */
+.javaScript{
+    margin-top: 30px;
+    height:15px;
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.javaScript::before{
+    content: "Java Script";
+    color: #f9f8fa;
+    position: absolute;
+    left:-58%;
+    top:-8px;
+    font-size: 20px;
+}
+.javaScript::after{
+    content: "75%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-javaScript{
+    height:15px;
+    width:75%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* jquery */
+.jquery{
+    margin-top: 30px;
+    height:15px;
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.jquery::before{
+    content: "jquery";
+    color: #f9f8fa;
+    position: absolute;
+    left:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.jquery::after{
+    content: "85%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-jquery{
+    height:15px;
+    width:85%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* bootstrap */
+.bootstrap{
+    margin-top: 30px;
+    height:15px;
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.bootstrap::before{
+    content: "Bootstrap";
+    color: #f9f8fa;
+    position: absolute;
+    left:-55%;
+    top:-8px;
+    font-size: 20px;
+}
+.bootstrap::after{
+    content: "90%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-bootstrap{
+    height:15px;
+    width:90%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+/* UI */
+.UI{
+    margin-top: 30px;
+    height:15px;
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid #f9f8fa;
+    background-color: #f9f8fa;
+    position: relative;
+}
+.UI::before{
+    content: "UI/UX";
+    color: #f9f8fa;
+    position: absolute;
+    left:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.UI::after{
+    content: "80%";
+    color: #f9f8fa;
+    position: absolute;
+    right:-50%;
+    top:-8px;
+    font-size: 25px;
+}
+.recent-UI{
+    height:15px;
+    width:80%;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    position: absolute;
+    top:-1px;
+    left: -1px;
+}
+}
+/* End Mobile skill */
+
+/* End Skills Section */
+
+/* Start Text */
+.Teams{
+    margin-bottom: 130px;
+    margin-top: 60px;
+}
+
+.Teams h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:102vh;
+}
+.Teams h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.Teams h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.Teams h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+
+.team-hover{
+    height: 100px;
+    width: 100px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    transition: all .3s ease;
+    border-left: transparent;
+    border-bottom: transparent;
+    border-radius: 2px;
+}
+.team-hover2{
+    height: 100px;
+    width: 100px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition: all .3s ease;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 2px;
+}
+/* End Text */
+
+/* Start Teams Section */
+.facebook-team a img{
+    width:45px;
+    height:45px;
+    padding: 5px;
+}
+.facebook-team a img:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3 ease;
+}
+.twitter-team a img{
+    width:45px;
+    height:45px;
+    padding: 5px;
+}
+.twitter-team a img:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3 ease;
+}
+.linkedin-team a img{
+    width:45px;
+    height:45px;
+    padding: 5px;
+}
+.linkedin-team a img:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3 ease;
+}
+.parent-teams{
+    width:80%;
+    height:auto;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:5px auto;
+}
+/* Bassam */
+.Bassam{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.social-bassam{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:1%;
+    left:-20%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.Bassam:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.Bassam img{
+    width: 240px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.Bassam h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+.Bassam p{
+    align-self: center;
+    color: #f9f8fa;
+}
+.Bassam button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+.Bassam button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* Mahmoud */
+.mahmoud{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.social-mahmoud{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top:-15%;
+    left:23%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.mahmoud:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.mahmoud img{
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.mahmoud h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+
+.mahmoud p{
+    align-self: center;
+    color: #f9f8fa;
+}
+
+.mahmoud button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+
+.mahmoud button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* Ahmed Tarek */
+.ahmed-Tarek{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.social-ahmed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top:-15%;
+    left:23%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.ahmed-Tarek:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.ahmed-Tarek img{
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.ahmed-Tarek h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+
+.ahmed-Tarek p{
+    color: #f9f8fa;
+    align-self: center;
+}
+
+.ahmed-Tarek button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+
+.ahmed-Tarek button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* Abbas */
+.abbas{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.social-abbas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:1%;
+    right:-20%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.abbas:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.abbas img{
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.abbas h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+.abbas p{
+    color: #f9f8fa;
+    align-self: center;
+}
+
+.abbas button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+
+.abbas button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* End Teams Section */
+
+
+
+/* Start Mobile Team */
+@media screen and (max-width:851px) {
+    /* Start Text */
+.Teams{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.Teams h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:18vh;
+}
+.Teams h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.Teams h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.Teams h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+
+.team-hover{
+    height: 100px;
+    width: 100px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    transition: all .3s ease;
+    border-left: transparent;
+    border-bottom: transparent;
+    border-radius: 2px;
+}
+.team-hover2{
+    height: 100px;
+    width: 100px;
+    border:5px goldenrod solid;
+    border-radius: 0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition: all .3s ease;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 2px;
+}
+/* End Text */
+
+/* Start Teams Section */
+.facebook-team a img{
+    width:45px;
+    height:45px;
+    padding: 5px;
+}
+.facebook-team a img:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3 ease;
+}
+.twitter-team a img{
+    width:45px;
+    height:45px;
+    padding: 5px;
+}
+.twitter-team a img:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3 ease;
+}
+.linkedin-team a img{
+    width:45px;
+    height:45px;
+    padding: 5px;
+}
+.linkedin-team a img:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3 ease;
+}
+.parent-teams{
+    width:80%;
+    height:auto;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+/* Bassam */
+.Bassam{
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.social-bassam{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:1%;
+    left:-20%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.Bassam:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.Bassam img{
+    width: 240px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.Bassam h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+.Bassam p{
+    align-self: center;
+    color: #f9f8fa;
+}
+.Bassam button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+.Bassam button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* Mahmoud */
+.mahmoud{
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 4%;    
+}
+.social-mahmoud{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:1%;
+    left:-20%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.mahmoud:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.mahmoud img{
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.mahmoud h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+
+.mahmoud p{
+    align-self: center;
+    color: #f9f8fa;
+}
+
+.mahmoud button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+
+.mahmoud button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* Ahmed Tarek */
+.ahmed-Tarek{
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 4%;
+}
+.social-ahmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:1%;
+    left:-20%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.ahmed-Tarek:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.ahmed-Tarek img{
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    align-self: center;
+}
+.ahmed-Tarek h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+
+.ahmed-Tarek p{
+    color: #f9f8fa;
+    align-self: center;
+}
+
+.ahmed-Tarek button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+
+.ahmed-Tarek button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* Abbas */
+.abbas{
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 4%;
+}
+.social-abbas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:1%;
+    left:-20%;
+    display: none;
+    border-radius: 10px 10px 2px 2px;
+    padding: 10px;
+}
+.abbas:hover{
+    transform:translateY(-20px);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    box-shadow: #212529 0px 3px 4px;
+}
+.abbas img{
+    width: 240px;
+    height:240px;
+    border-radius: 10px;
+    align-self: center;
+}
+.abbas h1{
+    color:goldenrod;
+    padding: 10px;
+    align-self: center;
+}
+.abbas p{
+    color: #f9f8fa;
+    align-self: center;
+}
+
+.abbas button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 7px;
+    padding: 8px 100px 8px 100px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    color: #f9f8fa;
+    font-weight: 600;
+}
+
+.abbas button:hover{
+    background-color: rgb(192, 154, 59);
+}
+
+/* End Teams Section */
+
+
+}
+/* End Mobile Team */
+
+/* Start Text */
+.Contact{
+    margin-bottom: 130px;
+    margin-top: 60px;
+}
+
+.Contact h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:102vh;
+}
+.Contact h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.Contact h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.Contact h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+/* End Text */
+
+/* Start Contact Section */
+
+.parent-contact{
+    background-color: #000000;
+    border-radius: 20px 20px 0% 0%;
+    width:100%;
+    height:auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+/* facebook */
+.facebook{
+    width:20%;
+    height:200px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.facebook:hover{
+    background-color: rgb(148, 112, 23);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.facebook a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.facebook h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+/* linkedin */
+.linkedin{
+    width:20%;
+    height:200px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.linkedin:hover{
+    background-color: rgb(148, 112, 23);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.linkedin a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.linkedin h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+/* twitter */
+.Twitter{
+    width:20%;
+    height:200px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.Twitter:hover{
+    background-color: rgb(148, 112, 23);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.Twitter a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.Twitter h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+/* instagram */
+.Instagram{
+    width:20%;
+    height:200px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.Instagram:hover{
+    background-color: rgb(148, 112, 23);
+    border: none;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.Instagram a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.Instagram h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+
+/* Start Mobile Contact */
+@media screen and (max-width:851px) {
+/* Start Text */
+.Contact{
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+.Contact h3{
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left:17vh;
+}
+.Contact h3:hover{
+    border-bottom: goldenrod solid 5px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.Contact h3::before{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:-50px;
+}
+
+.Contact h3::after{
+    content: "";
+    height:7px;
+    width:30px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    right:-50px;
+}
+/* End Text */
+
+.parent-contact{
+    background-color: #000000;
+    border-radius: 20px 20px 0% 0%;
+    width:100%;
+    height:auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* facebook */
+.facebook{
+    width:80%;
+    height:200px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.facebook:hover{
+    background-color: rgb(148, 112, 23);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.facebook a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.facebook h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+/* linkedin */
+.linkedin{
+    width:80%;
+    height:200px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.linkedin:hover{
+    background-color: rgb(148, 112, 23);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.linkedin a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.linkedin h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+/* twitter */
+.Twitter{
+    width:80%;
+    height:200px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.Twitter:hover{
+    background-color: rgb(148, 112, 23);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.Twitter a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.Twitter h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+/* instagram */
+.Instagram{
+    width:80%;
+    height:200px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid goldenrod;
+    border-right:transparent;
+    border-left:transparent;
+}
+.Instagram:hover{
+    background-color: rgb(148, 112, 23);
+    border: none;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.Instagram a{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.Instagram h2{
+    color: #f9f8fa;
+    align-self:center;
+}
+}
+/* End Mobile Contact */
+
+/* CopyWrite */
+.copy p{
+    color: #f9f8fa;
+    margin-top: -20px;
+    text-align: center;
+}
+
+
+/* End Contact Section */
+/* End CSS Codes */
